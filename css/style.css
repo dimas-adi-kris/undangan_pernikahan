@@ -1179,7 +1179,7 @@ form label {
 
 .heart {
   position: absolute;
-  top: 4em;
+  top: 1em;
   left: 0;
   right: 0;
   z-index: 99;
@@ -1252,11 +1252,11 @@ form label {
   margin-left: 5px;
 }
 .couple-half .desc-groom {
-  padding-right: 180px;
+  padding-right: 55px;
   text-align: right;
 }
 .couple-half .desc-bride {
-  padding-left: 180px;
+  padding-left: 55px;
   text-align: left;
 }
 @media screen and (max-width: 480px) {
