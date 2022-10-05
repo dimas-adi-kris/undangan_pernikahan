@@ -165,7 +165,7 @@
               <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
                 <h1>Ratih & Herwin</h1>
                 <p style="margin-bottom: 0">Kepada Bapak/Ibu/Saudara/i</p>
-                <p id="audience"></p>
+                <p style="font-size: 24px" id="audience"></p>
                 <p>Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami.</p>
 
                 <button class="btn btn-primary" id="open-invitation">Buka Undangan</button>
@@ -207,20 +207,7 @@
               <br />
               <p>
                 <a
-                  target="_blank"
-                  href="https://calendar.google.com/event?action=TEMPLATE&tmeid=M3Q1bnVjcW5sdjcybGo0Y2VyNWU1djRxcGQgZGltYXNrcmlzdGlhbnRvMTk5OUBt&tmsrc=dimaskristianto1999%40gmail.com"
-                  ><img
-                    border="0"
-                    src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"
-                /></a>
-                <a
-                  href="https://calendar.google.com/event?action=TEMPLATE&tmeid=M3Q1bnVjcW5sdjcybGo0Y2VyNWU1djRxcGQgZGltYXNrcmlzdGlhbnRvMTk5OUBt&tmsrc=dimaskristianto1999%40gmail.com"
-                  target="_blank"
-                  class="btn btn-primary btn-sm"
-                  >Save the date</a
-                ><br />
-                <a
-                  href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NW0zY2Ewam91bnUzbW5ub2YwdjVxaTliNmUgcDY4MjI3cmY0dTJ0cWI1b3JrZjEwbTN1NDRAZw&tmsrc=p68227rf4u2tqb5orkf10m3u44%40group.calendar.google.com"
+                  href="https://calendar.google.com/event?action=TEMPLATE&tmeid=Nzd0aGxiajY3bXViNDE3azFkaWhma3NqNnQgcmF0aWguaGVyd2luQG0&tmsrc=ratih.herwin%40gmail.com"
                   target="_blank"
                   class="btn btn-primary btn-sm"
                   >Save the date</a
@@ -592,7 +579,7 @@
 
           <div id="button-send" class="text-center animate-box">
             <a
-              href="https://github.com/maulidandev/nikah-rehan-maulidan/issues/new/choose"
+              href="https://github.com/dimas-adi-kris/undangan_pernikahan/issues/new/choose"
               target="_blank"
               class="btn btn-primary btn-sm"
               >Kirim Ucapan</a
@@ -721,7 +708,7 @@
       });
 
       $.get(
-        'https://api.github.com/repos/ngodingsolusi/the-wedding-of-rehan-maulidan/issues?state=all&per_page',
+        'https://api.github.com/repos/dimas-adi-kris/undangan_pernikahan/issues?state=all&per_page',
         function (data) {
           for (let i = 0; i < data.length; i++) {
             const item = `
@@ -812,131 +799,6 @@
           togglePlayButton1(false);
         }
       }
-    </script>
-
-    <script>
-      function akadLocation() {
-        // If it's an iPhone..
-        if (
-          navigator.platform.indexOf('iPhone') != -1 ||
-          navigator.platform.indexOf('iPod') != -1 ||
-          navigator.platform.indexOf('iPad') != -1
-        )
-          window.open('maps://www.google.com/maps?daddr=masjid+keuchik+leumik');
-        else window.open('https://www.google.com/maps?daddr=masjid+keuchik+leumik');
-      }
-
-      function walimahLocation() {
-        // If it's an iPhone..
-        if (
-          navigator.platform.indexOf('iPhone') != -1 ||
-          navigator.platform.indexOf('iPod') != -1 ||
-          navigator.platform.indexOf('iPad') != -1
-        )
-          window.open('maps://www.google.com/maps?daddr=Amel+Convention+Hall');
-        else window.open('https://www.google.com/maps?daddr=Amel+Convention+Hall');
-      }
-    </script>
-
-    <script type="text/javascript">
-      const lgContainer = document.getElementById('inline-gallery-container');
-      const inlineGallery = lightGallery(lgContainer, {
-        container: lgContainer,
-        dynamic: true,
-        thumbnail: true,
-        // Turn off hash plugin in case if you are using it
-        // as we don't want to change the url on slide change
-        hash: false,
-        // Do not allow users to close the gallery
-        closable: false,
-        // Add maximize icon to enlarge the gallery
-        showMaximizeIcon: true,
-        download: false,
-        // Append caption inside the slide item
-        // to apply some animation for the captions (Optional)
-        appendSubHtmlTo: '.lg-item',
-        // Delay slide transition to complete captions animations
-        // before navigating to different slides (Optional)
-        // You can find caption animation demo on the captions demo page
-        slideDelay: 400,
-        dynamicEl: [
-          {
-            src: 'images/gallery/20211107182627_IMG_5230.jpg-1024x.jpg',
-            thumb: 'images/gallery/20211107182627_IMG_5230.jpg-1024x.jpg',
-            /*subHtml: `<div class="lightGallery-captions">
-						<h4>Caption 1</h4>
-						<p>Description of the slide 1</p>
-					</div>`,*/
-          },
-          {
-            src: 'images/gallery/IMG_9958.JPG-1024x.jpg',
-            thumb: 'images/gallery/IMG_9958.JPG-1024x.jpg',
-            /*subHtml: `<div class="lightGallery-captions">
-						<h4>Caption 1</h4>
-						<p>Description of the slide 1</p>
-					</div>`,*/
-          },
-          {
-            src: 'images/gallery/molid.jpg-1024x.jpg',
-            thumb: 'images/gallery/molid.jpg-1024x.jpg',
-            /*subHtml: `<div class="lightGallery-captions">
-						<h4>Caption 1</h4>
-						<p>Description of the slide 1</p>
-					</div>`,*/
-          },
-          {
-            src: 'images/gallery/rehan.jpg-1024x.jpg',
-            thumb: 'images/gallery/rehan.jpg-1024x.jpg',
-            /*subHtml: `<div class="lightGallery-captions">
-						<h4>Caption 1</h4>
-						<p>Description of the slide 1</p>
-					</div>`,*/
-          },
-          {
-            src: 'images/gallery/ring-3.JPG-1024x.jpg',
-            thumb: 'images/gallery/ring-3.JPG-1024x.jpg',
-            /*subHtml: `<div class="lightGallery-captions">
-						<h4>Caption 1</h4>
-						<p>Description of the slide 1</p>
-					</div>`,*/
-          },
-          {
-            src: 'images/gallery/20211107181957_IMG_5207.jpg-1024x.jpg',
-            thumb: 'images/gallery/20211107181957_IMG_5207.jpg-1024x.jpg',
-            /*subHtml: `<div class="lightGallery-captions">
-						<h4>Caption 1</h4>
-						<p>Description of the slide 1</p>
-					</div>`,*/
-          },
-          {
-            src: 'images/gallery/IMG_9797.JPG-1024x.jpg',
-            thumb: 'images/gallery/IMG_9797.JPG-1024x.jpg',
-            /*subHtml: `<div class="lightGallery-captions">
-						<h4>Caption 1</h4>
-						<p>Description of the slide 1</p>
-					</div>`,*/
-          },
-          {
-            src: 'images/gallery/IMG_9802.JPG-1024x.jpg',
-            thumb: 'images/gallery/IMG_9802.JPG-1024x.jpg',
-            /*subHtml: `<div class="lightGallery-captions">
-						<h4>Caption 1</h4>
-						<p>Description of the slide 1</p>
-					</div>`,*/
-          },
-          {
-            src: 'images/gallery/IMG_9787-1024x.jpg',
-            thumb: 'images/gallery/IMG_9787-1024x.jpg',
-            /*subHtml: `<div class="lightGallery-captions">
-						<h4>Caption 1</h4>
-						<p>Description of the slide 1</p>
-					</div>`,*/
-          },
-        ],
-      });
-
-      // Since we are using dynamic mode, we need to programmatically open lightGallery
-      inlineGallery.openGallery();
     </script>
   </body>
 </html>

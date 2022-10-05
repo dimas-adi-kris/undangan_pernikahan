@@ -2,7 +2,7 @@
 name: Tidak Hadir
 about: Doakan kami di acara pernikahan kami
 title: Namamu
-labels: tidak hadir
+labels: Tidak hadir
 assignees: ''
 
 ---
