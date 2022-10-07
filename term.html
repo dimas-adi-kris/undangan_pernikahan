@@ -3566,5 +3566,22 @@
         </div>
       </div>
     </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/csv-to-array/csvToArray.v2.1.min.js"></script>
+    <script>
+      $.ajax({
+        url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTsnsM74VN-acdo9In-7QyWIugwBDqWbdNFZJ-INtric7GaXcp_V5a3sSUdEnAIZLOjyNrsWaLOEQup/pub?output=csv',
+        dataType: 'text',
+        cache: false,
+      }).done(function (csvAsString) {
+        csvAsArray = csvAsString.csvToArray();
+        console.log(csvAsArray);
+      });
+    </script>
   </body>
 </html>
