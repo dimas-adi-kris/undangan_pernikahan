@@ -103,16 +103,16 @@
     <!-- Theme style  -->
     <link rel="stylesheet" href="css/style.css" />
 
-    <script
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+    <!-- jquery -->
+    <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
       integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    ></script>
-
-    <!-- Modernizr JS -->
-    <script src="js/modernizr-2.6.2.min.js"></script>
-
+    ></script> -->
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
       <script src="js/respond.min.js"></script>
@@ -791,7 +791,7 @@
     <script src="lib/lightgallery.js/dist/plugins/fullscreen/lg-fullscreen.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.0.3/showdown.min.js"></script>
     <script src="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/csv-to-array/csvToArray.v2.1.min.js"></script>
-
+    <!-- Countdown -->
     <script>
       // var getCurrentUrl = ()=>{return window.location.href};
       const q = new URLSearchParams(window.location.search);
@@ -885,6 +885,8 @@
       }
 
       function toggleAudio1() {
+        console.log(player1.getPlayerState);
+        console.log(player1.getPlayerState());
         if (player1.getPlayerState() == 1 || player1.getPlayerState() == 3) {
           player1.pauseVideo();
           togglePlayButton1(false);
@@ -895,6 +897,8 @@
       }
 
       function playAudio1() {
+        console.log(player1);
+        console.log(typeof player1.getPlayerState);
         if (!(player1.getPlayerState() == 1 || player1.getPlayerState() == 3)) {
           player1.playVideo();
           togglePlayButton1(true);
@@ -915,8 +919,8 @@
     </script>
 
     <!-- csv-to-array -->
-    <script src="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/csv-to-array/csvToArray.v2.1.min.js"></script>
-    <script>
+    <!-- <script src="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/csv-to-array/csvToArray.v2.1.min.js"></script> -->
+    <!-- <script>
       // Program ini untuk memuat ucapan
       $.ajax({
         url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTsnsM74VN-acdo9In-7QyWIugwBDqWbdNFZJ-INtric7GaXcp_V5a3sSUdEnAIZLOjyNrsWaLOEQup/pub?output=csv',
@@ -947,6 +951,6 @@
           });
         }
       });
-    </script>
+    </script> -->
   </body>
 </html>
