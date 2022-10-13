@@ -128,9 +128,6 @@
       <div id="floating-button" class="float">
         <div class="control-center open">
           <div class="audio-play">
-<<<<<<< Updated upstream
-            <div data-video="QZng89VxKWg" data-autoplay="0" data-loop="1" id="youtube-audio1"></div>
-=======
             <div class="local-audio">
               <button
                 style="
@@ -152,7 +149,6 @@
               </audio>
             </div>
             <!-- <div data-video="hQ-wYw4hP84" data-autoplay="0" data-loop="1" id="youtube-audio1"></div> -->
->>>>>>> Stashed changes
           </div>
           <ul class="right-sidebar">
             <!--gallery-->
@@ -872,69 +868,15 @@
     </script>
 
     <script>
-<<<<<<< Updated upstream
-      // 2. This code loads the IFrame Player API code asynchronously.
-      var tag = document.createElement('script');
-
-      tag.src = 'https://www.youtube.com/iframe_api';
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-      // 3. This function creates an <iframe> (and YouTube player)
-      //    after the API code downloads.
-      var player1;
-      function onYouTubeIframeAPIReady() {
-        var ctrlq1 = document.getElementById('youtube-audio1');
-        ctrlq1.innerHTML = '<img id="youtube-icon1" src=""/><div id="youtube-player1"></div>';
-        ctrlq1.style.cssText = 'width:20px;margin:0 auto;cursor:pointer;cursor:hand;display:none';
-        player1 = new YT.Player('youtube-player1', {
-          height: '0',
-          width: '0',
-          videoId: ctrlq1.dataset.video,
-          playerVars: {
-            autoplay: ctrlq1.dataset.autoplay,
-            loop: ctrlq1.dataset.loop,
-          },
-          events: {
-            onReady: onPlayerReady1,
-            onStateChange: onPlayerStateChange1,
-          },
-        });
-        ctrlq1.onclick = toggleAudio1;
-      }
-
-      function togglePlayButton1(play) {
-        document.getElementById('youtube-icon1').src = play
-          ? 'https://i.imgur.com/IDzX9gL.png'
-          : 'https://i.imgur.com/quyUPXN.png';
-      }
-
-      function toggleAudio1() {
-        console.log(player1.getPlayerState);
-        console.log(player1.getPlayerState());
-        if (player1.getPlayerState() == 1 || player1.getPlayerState() == 3) {
-          player1.pauseVideo();
-          togglePlayButton1(false);
-=======
       var lagu = document.getElementById('lagu-audio');
 
       function playAudio(play) {
         if (play) {
           lagu.play();
->>>>>>> Stashed changes
         } else {
           lagu.pause();
         }
       }
-<<<<<<< Updated upstream
-
-      function playAudio1() {
-        console.log(player1);
-        console.log(typeof player1.getPlayerState);
-        if (!(player1.getPlayerState() == 1 || player1.getPlayerState() == 3)) {
-          player1.playVideo();
-          togglePlayButton1(true);
-=======
       function togglePlayButton1(play) {
         if (play) {
           document.getElementById('audio-icon-player').classList.remove('fa-play');
@@ -942,7 +884,6 @@
         } else {
           document.getElementById('audio-icon-player').classList.remove('fa-stop');
           document.getElementById('audio-icon-player').classList.add('fa-play');
->>>>>>> Stashed changes
         }
       }
       function toggleAudio() {
@@ -956,42 +897,6 @@
       }
     </script>
 
-<<<<<<< Updated upstream
-    <!-- csv-to-array -->
-    <!-- <script src="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/csv-to-array/csvToArray.v2.1.min.js"></script> -->
-    <!-- <script>
-      // Program ini untuk memuat ucapan
-      $.ajax({
-        url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTsnsM74VN-acdo9In-7QyWIugwBDqWbdNFZJ-INtric7GaXcp_V5a3sSUdEnAIZLOjyNrsWaLOEQup/pub?output=csv',
-        dataType: 'text',
-        cache: false,
-      }).done(function (csvAsString) {
-        // console.log(csvAsString);
-        let split = csvAsString.split('\n');
-        // console.log(split);
-        if (split.length > 1) {
-          split = split.slice(1);
-          split.forEach((elem) => {
-            split_elem = elem.split(',');
-            let badge = 'danger';
-            if (split_elem[1] == 'Hadir') {
-              badge = 'primary';
-            }
-            $('#daftar-ucapan').append(`
-				<div class="row">
-							<div class="panel panel-success">
-							  <div class="panel-heading">
-								<h3 class="panel-title">${split_elem[2]} <span class="label label-${badge}">${split_elem[1]}</span></h3>
-							  </div>
-							  <div class="panel-body">${split_elem[3]}</div>
-							</div>
-						  </div>
-				`);
-          });
-        }
-      });
-    </script> -->
-=======
     <script>
       // 2. This code loads the IFrame Player API code asynchronously.
       //   var tag = document.createElement('script');
@@ -1059,6 +964,5 @@
       //     }
       //   }
     </script>
->>>>>>> Stashed changes
   </body>
 </html>
