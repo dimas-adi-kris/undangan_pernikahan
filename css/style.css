@@ -19,6 +19,13 @@ body {
   background: #fff;
 }
 
+.sub-title{
+  color: #bf9b73;     text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
 #page {
   position: relative;
   overflow-x: hidden;
@@ -1340,13 +1347,13 @@ form label {
   line-height: 1.5;
   color: #828282;
 }
-.fh5co-heading span {
+/* .fh5co-heading span {
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 2px;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.4);
-}
+} */
 
 #fh5co-testimonial .wrap-testimony {
   position: relative;
